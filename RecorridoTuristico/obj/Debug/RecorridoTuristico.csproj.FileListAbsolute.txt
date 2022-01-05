@@ -1,0 +1,4 @@
+C:\Users\Usuario\Documents\SharpDevelop Projects\RecorridoTuristico\RecorridoTuristico\bin\Debug\RecorridoTuristico.exe
+C:\Users\Usuario\Documents\SharpDevelop Projects\RecorridoTuristico\RecorridoTuristico\bin\Debug\RecorridoTuristico.pdb
+C:\Users\Usuario\Documents\SharpDevelop Projects\RecorridoTuristico\RecorridoTuristico\obj\Debug\RecorridoTuristico.exe
+C:\Users\Usuario\Documents\SharpDevelop Projects\RecorridoTuristico\RecorridoTuristico\obj\Debug\RecorridoTuristico.pdb
