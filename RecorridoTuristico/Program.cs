@@ -25,37 +25,37 @@ namespace RecorridoTuristico
 			Vertice<string> formosa = new Vertice<string>("Formosa");
 			argentina.agregarVertice(formosa);					
 			Vertice<string> laRioja= new Vertice<string>("La Rioja");
-			argentina.agregarVertice(formosa);
+			argentina.agregarVertice(laRioja);
 			Vertice<string> cordoba = new Vertice<string>("Córdoba");
-			argentina.agregarVertice(formosa);
-			Vertice<string> santaFe = new Vertice<string>("Formosa");
-			argentina.agregarVertice(formosa);
+			argentina.agregarVertice(cordoba);
+			Vertice<string> santaFe = new Vertice<string>("Santa fe");
+			argentina.agregarVertice(santaFe);
 			Vertice<string> corrientes = new Vertice<string>("Corrientes");
-			argentina.agregarVertice(formosa);
+			argentina.agregarVertice(corrientes);
 			Vertice<string> misiones = new Vertice<string>("Posadas");
-			argentina.agregarVertice(formosa);
+			argentina.agregarVertice(misiones);
 			Vertice<string> sanJuan = new Vertice<string>("San Juan");
-			argentina.agregarVertice(formosa);
+			argentina.agregarVertice(sanJuan);
 			Vertice<string> sanLuis = new Vertice<string>("San Luis");
-			argentina.agregarVertice(formosa);
+			argentina.agregarVertice(sanLuis);
 			Vertice<string> laPampa = new Vertice<string>("Santa Rosa");
-			argentina.agregarVertice(formosa);
+			argentina.agregarVertice(laPampa);
 			Vertice<string> buenosAires = new Vertice<string>("La Plata");
-			argentina.agregarVertice(formosa);
+			argentina.agregarVertice(buenosAires);
 			Vertice<string> entreRios = new Vertice<string>("Paraná");
-			argentina.agregarVertice(formosa);
+			argentina.agregarVertice(entreRios);
 			Vertice<string> mendoza = new Vertice<string>("Mendoza");
-			argentina.agregarVertice(formosa);
+			argentina.agregarVertice(mendoza);
 			Vertice<string> rioNegro = new Vertice<string>("Viedma");
-			argentina.agregarVertice(formosa);
+			argentina.agregarVertice(rioNegro);
 			Vertice<string> neuquen = new Vertice<string>("Neuquén");
-			argentina.agregarVertice(formosa);
+			argentina.agregarVertice(neuquen);
 			Vertice<string> chubut = new Vertice<string>("Rawson");
-			argentina.agregarVertice(formosa);
+			argentina.agregarVertice(chubut);
 			Vertice<string> santaCruz = new Vertice<string>("Río Gallegos");
-			argentina.agregarVertice(formosa);
+			argentina.agregarVertice(santaCruz);
 			Vertice<string> tierraDelFuego = new Vertice<string>("Ushuaia");
-			argentina.agregarVertice(formosa);
+			argentina.agregarVertice(tierraDelFuego);
 			
 			//conexion jujuy
 			argentina.conectar(jujuy,salta,67);
@@ -98,7 +98,6 @@ namespace RecorridoTuristico
 			//conexion formosa
 			argentina.conectar(formosa,chaco,161);
 			argentina.conectar(formosa,salta,741);
-			argentina.conectar(formosa,corrientes,157);
 			
 			//conexion la rioja
 			argentina.conectar(laRioja,catamarca,149);
@@ -126,7 +125,6 @@ namespace RecorridoTuristico
 			//conexiones corrientes
 			argentina.conectar(corrientes,santaFe,498);
 			argentina.conectar(corrientes,chaco,13);
-			argentina.conectar(corrientes,formosa,157);
 			argentina.conectar(corrientes,misiones,291);
 			argentina.conectar(corrientes,entreRios,500);
 			
@@ -193,56 +191,26 @@ namespace RecorridoTuristico
 			//conexiones tierra del fuego
 			argentina.conectar(tierraDelFuego,santaCruz,359);
 			
+		
+			RecorridoTuristico<string> recorrido = new RecorridoTuristico<string>();
 			
+			Console.WriteLine("Recorrido desde La Plata hasta La Rioja: ");
+			foreach(var v in recorrido.MejorCaminoConDFS(argentina,buenosAires,laRioja)){
+				Console.Write(v.getDato() + "-");
+			}
+			Console.WriteLine();Console.WriteLine();Console.WriteLine();	
+			Console.WriteLine("Recorrido desde Chubut hasta Misiones: ");
+			foreach(var v in recorrido.MejorCaminoConDFS(argentina,chubut,misiones)){
+				Console.Write(v.getDato() + "-");
+			}
+			Console.WriteLine();Console.WriteLine();Console.WriteLine();		
+			Console.WriteLine("Recorrido desde Salta hasta Neuquén: ");
+			foreach(var v in recorrido.MejorCaminoConDFS(argentina,salta,neuquen)){
+				Console.Write(v.getDato() + "-");
+			}
+			Console.WriteLine();Console.WriteLine();Console.WriteLine();
 			
-//			Vertice<int> salaF = new Vertice<int>(9);	
-//			macba.agregarVertice(salaF);
-//			Vertice<int> salaG = new Vertice<int>(20);	
-//			macba.agregarVertice(salaG);
-//			Vertice<int> salaH = new Vertice<int>(15);	
-//			macba.agregarVertice(salaH);
-//			Vertice<int> salaI = new Vertice<int>(7);	
-//			macba.agregarVertice(salaI);
-//
-//			macba.conectar(salaA,salaB,3);
-//			macba.conectar(salaB,salaA,3);
-//			macba.conectar(salaB,salaC,4);
-//			macba.conectar(salaC,salaB,4);
-//			macba.conectar(salaB,salaE,3);
-//			macba.conectar(salaE,salaB,3);
-//			macba.conectar(salaC,salaD,4);
-//			macba.conectar(salaD,salaC,4);
-//			macba.conectar(salaC,salaF,3);
-//			macba.conectar(salaF,salaC,3);
-//			macba.conectar(salaC,salaE,5);
-//			macba.conectar(salaE,salaC,5);
-//			macba.conectar(salaD,salaF,4);
-//			macba.conectar(salaF,salaD,4);
-//			macba.conectar(salaE,salaF,4);
-//			macba.conectar(salaF,salaE,4);
-//			macba.conectar(salaF,salaH,3);
-//			macba.conectar(salaH,salaE,3);
-//			macba.conectar(salaF,salaG,5);
-//			macba.conectar(salaG,salaF,5);
-//			macba.conectar(salaE,salaG,3);
-//			macba.conectar(salaG,salaE,3);
-//			macba.conectar(salaG,salaH,4);
-//			macba.conectar(salaH,salaG,4);
-//			macba.conectar(salaG,salaI,3);
-//			macba.conectar(salaI,salaG,3);
-//			
-//			Console.WriteLine("RECORRIDO SALA:");
-//			RecorridoSala<int> recorSala = new RecorridoSala<int>();
-//			Console.WriteLine();
-//			
-//			Console.WriteLine("El mejor recorrido es el que pasa por las salas: ");
-//			foreach(var v in recorSala.MejorCaminoConDFSArista(macba,salaA,salaI)){
-//				Console.Write(v.getDestino().getDato() + " ");
-//			}
-//			Console.WriteLine();
-//			
-			
-			
+
 		
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);

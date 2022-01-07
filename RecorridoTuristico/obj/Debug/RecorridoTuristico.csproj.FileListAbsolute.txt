@@ -2,3 +2,8 @@ C:\Users\Usuario\Documents\SharpDevelop Projects\RecorridoTuristico\RecorridoTur
 C:\Users\Usuario\Documents\SharpDevelop Projects\RecorridoTuristico\RecorridoTuristico\bin\Debug\RecorridoTuristico.pdb
 C:\Users\Usuario\Documents\SharpDevelop Projects\RecorridoTuristico\RecorridoTuristico\obj\Debug\RecorridoTuristico.exe
 C:\Users\Usuario\Documents\SharpDevelop Projects\RecorridoTuristico\RecorridoTuristico\obj\Debug\RecorridoTuristico.pdb
+C:\Users\Usuario\Desktop\.NET(C#)\RecorridoTuristico\RecorridoTuristico\bin\Debug\RecorridoTuristico.exe
+C:\Users\Usuario\Desktop\.NET(C#)\RecorridoTuristico\RecorridoTuristico\bin\Debug\RecorridoTuristico.pdb
+C:\Users\Usuario\Desktop\.NET(C#)\RecorridoTuristico\RecorridoTuristico\obj\Debug\RecorridoTuristico.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\.NET(C#)\RecorridoTuristico\RecorridoTuristico\obj\Debug\RecorridoTuristico.exe
+C:\Users\Usuario\Desktop\.NET(C#)\RecorridoTuristico\RecorridoTuristico\obj\Debug\RecorridoTuristico.pdb
